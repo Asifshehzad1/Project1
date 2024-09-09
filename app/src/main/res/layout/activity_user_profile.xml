@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/navy"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/txt_display_name"
+            android:layout_marginTop="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/navy"
+            android:hint="Loading..."
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/txt_display_email"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/navy"
+            android:hint="Loading..."
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/txt_display_dob"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/navy"
+            android:hint="Loading..."
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Delete"
+            android:layout_marginTop="30dp"/>
+
+
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="135dp"
+        android:layout_gravity="center"
+        android:background="@drawable/oval"
+        app:civ_circle_background_color="@color/white"
+        android:src="@drawable/person_24"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edit_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="290dp"
+        android:layout_gravity="center"
+        android:background="@drawable/oval"
+        app:civ_circle_background_color="@color/gray"
+        android:src="@drawable/edit_24"/>
+
+
+
+</RelativeLayout>

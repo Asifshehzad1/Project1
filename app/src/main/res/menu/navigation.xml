@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_profile"
+        android:title="My Account"/>
+    <item
+        android:id="@+id/nav_orderlist"
+        android:title="Order List"/>
+    <item
+        android:id="@+id/nav_cart"
+        android:title="MyCart"/>
+    <item
+        android:id="@+id/nav_next"
+        android:title="Next"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"/>
+
+
+</menu>

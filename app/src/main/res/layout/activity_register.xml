@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/images"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gradient"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="15dp"
+            android:elevation="0dp"
+            android:layout_marginTop="-20dp"
+            app:cardBackgroundColor="@color/navy">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social Media"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="390dp"
+            android:layout_height="460dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            android:elevation="5dp"
+            android:layout_marginTop="-20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="REGISTER"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Asif"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/person_24"
+                    android:paddingStart="10dp"/>
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                   android:text="asif12gmail.com"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/email_24"
+                    android:paddingStart="10dp"/>
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                   android:text="123456"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/lock_24"
+                    android:paddingStart="10dp"/>
+                <EditText
+                    android:id="@+id/edit_dob"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                   android:text="2000-12-12"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/add_business_24"
+                    android:paddingStart="10dp"/>
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Register"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account?"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="130dp"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:id="@+id/txt_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="@color/purple_200"
+                        android:textSize="10sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

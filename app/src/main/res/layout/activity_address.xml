@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/purple_500">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_new_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="50dp"
+                android:text="Add Shipping Address"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:text="Recipent's Name"/>
+        <EditText
+            android:id="@+id/recip_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:hint="Please Input your name"
+            android:background="@drawable/round_corners"
+            android:layout_marginHorizontal="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:text="Phone Number"/>
+        <EditText
+            android:id="@+id/recip_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Your Phone Number"
+            android:paddingStart="10dp"
+            android:background="@drawable/round_corners"
+            android:layout_marginHorizontal="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:text="Region/City/District"/>
+        <EditText
+            android:id="@+id/recip_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Input Region/City/District"
+            android:paddingStart="10dp"
+            android:background="@drawable/round_corners"
+            android:layout_marginHorizontal="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:text="Address"/>
+        <EditText
+            android:id="@+id/recip_street"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Input House no,Street or Building"
+            android:paddingStart="10dp"
+            android:background="@drawable/round_corners"
+            android:layout_marginHorizontal="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:text="Payment Method"/>
+        <EditText
+            android:id="@+id/recip_payment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Input Payment Method"
+            android:paddingStart="10dp"
+            android:background="@drawable/round_corners"
+            android:layout_marginHorizontal="20dp"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:text="Address Category"/>-->
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radio_group"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--               android:layout_marginStart="80dp">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radio_home"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Home"/>-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radio_office"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Office"/>-->
+<!--                </LinearLayout>-->
+<!--            </RadioGroup>-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_complete_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Compleate Order"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
